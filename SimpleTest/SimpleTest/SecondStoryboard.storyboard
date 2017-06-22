@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--FromSSB-->
+        <scene sceneID="wvt-Ed-Jse">
+            <objects>
+                <viewController storyboardIdentifier="JKTestSBID" id="zT3-xt-IFR" customClass="SSViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DcF-hG-d2o">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KcK-3n-GeI">
+                                <rect key="frame" x="123" y="141" width="51" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="goback"/>
+                                <connections>
+                                    <action selector="goback_0:" destination="zT3-xt-IFR" eventType="touchUpInside" id="8Hi-lj-UcQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="FromSSB" id="RIR-74-KdM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UBQ-QP-Qiu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26.133333333333333" y="294.41333333333336"/>
+        </scene>
+        <!--AudioVC-->
+        <scene sceneID="7MJ-Y7-dhq">
+            <objects>
+                <viewController storyboardIdentifier="AudioVC" id="0kg-NT-Jet" customClass="AudioVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1y1-nX-qRv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" id="98o-Oi-Bfz">
+                                <rect key="frame" x="20" y="357" width="280" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zpV-0Z-jcn">
+                                <rect key="frame" x="52" y="414" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="&lt;&lt;"/>
+                                <connections>
+                                    <action selector="preBtn:" destination="0kg-NT-Jet" eventType="touchUpInside" id="ylZ-7J-ZaZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GO9-yq-hfa">
+                                <rect key="frame" x="228" y="414" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="&gt;&gt;"/>
+                                <connections>
+                                    <action selector="nextBtn:" destination="0kg-NT-Jet" eventType="touchUpInside" id="rsf-Ek-eiO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LUX-bZ-zZ3">
+                                <rect key="frame" x="137" y="414" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="|&gt;"/>
+                                <connections>
+                                    <action selector="playBtn:" destination="0kg-NT-Jet" eventType="touchUpInside" id="Oi6-8F-2Uw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="playBtn" destination="LUX-bZ-zZ3" id="2BM-D8-j1q"/>
+                        <outlet property="progressView" destination="98o-Oi-Bfz" id="VXW-hc-dLc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZQ6-kv-jb4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="401" y="282"/>
+        </scene>
+    </scenes>
+</document>
